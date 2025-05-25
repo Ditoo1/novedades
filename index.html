@@ -1,1 +1,179 @@
-<h1>holaputas</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades | Cube Client</title>
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --primary-light: #6a8fc7;
+            --bg-dark: #0a0a0a;
+            --bg-light: #1a1a1a;
+            --text-main: rgba(255, 255, 255, 0.9);
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --border-radius: 4px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .news-container {
+            max-width: 100%;
+            padding: 20px;
+            background: rgba(25, 25, 30, 0.7);
+            backdrop-filter: blur(10px);
+            min-height: 100vh;
+        }
+
+        .news-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .news-header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .news-header .date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .news-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .news-section {
+            margin-bottom: 30px;
+        }
+
+        .news-section h2 {
+            color: var(--primary-light);
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        .news-section h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .news-section p {
+            margin-bottom: 15px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        .update-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--primary);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .update-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--primary-light);
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 25px 0;
+        }
+
+        @media (max-width: 768px) {
+            .news-container {
+                padding: 15px;
+            }
+            
+            .news-header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .news-section h2 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="news-container">
+        <div class="news-header">
+            <h1>Últimas Novedades</h1>
+            <div class="date">Publicado el 25 de Mayo, 2024</div>
+        </div>
+        
+        <div class="news-content">
+            <div class="news-section">
+                <h2>Actualización del Launcher</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                
+                <div class="update-item">
+                    <h3>v1.2.0 - Nueva interfaz</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                
+                <div class="update-item">
+                    <h3>v1.1.5 - Optimizaciones</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="news-section">
+                <h2>Eventos Actuales</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                
+                <div class="update-item">
+                    <h3>Torneo de Construcción</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="news-section">
+                <h2>Próximamente</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                
+                <div class="update-item">
+                    <h3>Nuevo Modo de Juego</h3>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
